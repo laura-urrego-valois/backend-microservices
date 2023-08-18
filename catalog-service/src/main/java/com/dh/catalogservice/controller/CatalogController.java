@@ -20,7 +20,7 @@ public class CatalogController {
         return movieClient.getMoviesByGenre(genre);
     }
 
-    @PostMapping("/api/v1/movies/save")
+    @PostMapping("/catalog/save")
     public ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
         return movieClient.saveMovie(movie);
     }
