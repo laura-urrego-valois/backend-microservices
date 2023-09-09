@@ -26,6 +26,11 @@ public class MovieController {
         return ResponseEntity.ok().body(movieService.findByGenre(genre));
     }
 
+    @GetMapping("/findAll")
+    public List<Movie> findAll(@RequestParam(defaultValue = "true") Boolean throwError) {
+        return movieService.findAll(throwError);
+    }
+
     @PostMapping("/save")
     ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
         return ResponseEntity.ok().body(movieService.save(movie));
