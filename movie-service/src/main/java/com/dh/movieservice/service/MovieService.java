@@ -23,6 +23,13 @@ public class MovieService {
         return movieRepository.findByGenre(genre);
     }
 
+    public List<Movie> findAll(Boolean throwError) {
+        if (throwError)
+            throw new RuntimeException();
+
+        return movieRepository.findAll();
+    }
+
     public Movie save(Movie movie) {
         return movieRepository.save(movie);
     }

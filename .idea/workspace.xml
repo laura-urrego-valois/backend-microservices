@@ -4,28 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f912cb97-2d06-498c-9f56-3dc79b29e9ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/serie-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/SerieServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/controller/SerieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/model/Serie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/repository/SerieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/service/SerieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serie-service/src/test/java/com/example/serieservice/SerieServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/primer-parcial-especializacion-backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/primer-parcial-especializacion-backend.iml" afterDir="false" />
+    <list default="true" id="39fc8a38-05e5-4edc-8a5b-922418535101" name="Changes" comment="Se hace merge de últimos cambios.">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/030c8e6454a1f0ca9b6f4725106d7e473d484878" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19aea80bf9f0d0d0fc2726519a0f9e2bc904bdbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/483657ab05fef7bdeb0d3cc37c6c3d0f7eafca23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c3ac7f3207ad85baf9e8c3fd5e6578c125c6ae1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e560241f556df10cd9b85f17e4aaea58393278a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/527a792bb4ec88fc0e7f7fe198baa765fe9d1d82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63b225c0a91f64972b53de598b02c9ca4e6deef2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/982c978a383fef6c255172d3c4f86f68ccf11385" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a3c00e2ae247a35a2b6f92b066f2389c28fe2726" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b7710da552291b9317280e31bacef31d7f41e0b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd3977945a1c242ae7fd66a887a20d1c73bc74b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3939b3b8d464486d398758d46cd26468b59f7eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb32c7822afeb7d33eed5a9e0715baaa507fdca0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/3/030c8e6454a1f0ca9b6f4725106d7e473d484878" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/19aea80bf9f0d0d0fc2726519a0f9e2bc904bdbd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/8/483657ab05fef7bdeb0d3cc37c6c3d0f7eafca23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4c3ac7f3207ad85baf9e8c3fd5e6578c125c6ae1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/e/4e560241f556df10cd9b85f17e4aaea58393278a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/2/527a792bb4ec88fc0e7f7fe198baa765fe9d1d82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/3/63b225c0a91f64972b53de598b02c9ca4e6deef2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/8/982c978a383fef6c255172d3c4f86f68ccf11385" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/3/a3c00e2ae247a35a2b6f92b066f2389c28fe2726" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/7/b7710da552291b9317280e31bacef31d7f41e0b1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/d/bd3977945a1c242ae7fd66a887a20d1c73bc74b2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/3/f3939b3b8d464486d398758d46cd26468b59f7eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/b/fb32c7822afeb7d33eed5a9e0715baaa507fdca0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +59,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/catalog-service/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/client/IMovieClient.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/IMovieService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/MovieServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/resources/application.yml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/movie-service/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/com/dh/movieservice/controller/MovieController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/movie-service/src/main/java/com/dh/movieservice/service/MovieService.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2V8WQ5uudDXDLLkYt3h0sn3QZKk" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2U8Ea7oX0fjTGdEAQMnMCafzTTy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -62,12 +85,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Modules",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/laura/OneDrive/Escritorio/configs",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SerieServiceApplication">
+  <component name="RunManager" selected="Docker.docker.mysql: Compose Deployment">
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dh.catalogservice.CatalogServiceApplication" />
       <module name="catalog-service" />
@@ -120,25 +147,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SerieServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.serieservice.SerieServiceApplication" />
-      <module name="serie-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.serieservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker.mysql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mysql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CatalogServiceApplication" />
-        <item itemvalue="Application.SerieServiceApplication" />
-        <item itemvalue="Application.GatewayApplication" />
+        <item itemvalue="Docker.docker.mysql: Compose Deployment" />
         <item itemvalue="Application.MovieServiceApplication" />
+        <item itemvalue="Application.CatalogServiceApplication" />
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
       </list>
     </recent_temporary>
@@ -146,12 +179,24 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f912cb97-2d06-498c-9f56-3dc79b29e9ba" name="Changes" comment="" />
-      <created>1694218180744</created>
+      <changelist id="39fc8a38-05e5-4edc-8a5b-922418535101" name="Changes" comment="" />
+      <created>1692312889321</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1694218180744</updated>
+      <updated>1692312889321</updated>
     </task>
+    <task id="LOCAL-00001" summary="Se hace merge de últimos cambios.">
+      <created>1692329181609</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692329181609</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se hace merge de últimos cambios." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se hace merge de últimos cambios." />
   </component>
 </project>
