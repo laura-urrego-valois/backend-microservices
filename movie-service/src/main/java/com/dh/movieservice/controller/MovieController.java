@@ -1,12 +1,12 @@
 package com.dh.movieservice.controller;
 
 import com.dh.movieservice.model.Movie;
+import com.dh.movieservice.queue.MovieSender;
 import com.dh.movieservice.service.MovieService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * @author vaninagodoy
@@ -17,15 +17,15 @@ import java.util.logging.Logger;
 public class MovieController {
 
     private final MovieService movieService;
-    private static java.util.logging.Logger log = Logger.getLogger(MovieController.class.getName());
+    private final MovieSender sender;
 
-    public MovieController(MovieService movieService) {
+    public MovieController(MovieService movieService, MovieSender sender) {
         this.movieService = movieService;
+        this.sender = sender;
     }
 
     @GetMapping("/{genre}")
     ResponseEntity<List<Movie>> getMovieByGenre(@PathVariable String genre) {
-        log.info("Solicitando películas por género: " + genre);
         return ResponseEntity.ok().body(movieService.findByGenre(genre));
     }
 
@@ -36,7 +36,7 @@ public class MovieController {
 
     @PostMapping("/save")
     ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
-        log.info("Guardando película: " + movie.getName());
+        sender.sendMsg(movie);
         return ResponseEntity.ok().body(movieService.save(movie));
     }
 }
