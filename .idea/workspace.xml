@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0d90372-27f2-4203-9c0b-57ffa6b8f19c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/dh/movieservice/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/dh/movieservice/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serie-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/serie-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/controller/SerieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/serie-service/src/main/java/com/example/serieservice/controller/SerieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serie-service/target/classes/com/example/serieservice/controller/SerieController.class" beforeDir="false" afterPath="$PROJECT_DIR$/serie-service/target/classes/com/example/serieservice/controller/SerieController.class" afterDir="false" />
-    </list>
+    <list default="true" id="a0d90372-27f2-4203-9c0b-57ffa6b8f19c" name="Changes" comment="Merging changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +23,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2VAMO331ngGENBxCj1lheA2LiKb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,7 +31,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RunManager" selected="Application.GatewayApplication">
@@ -141,5 +121,9 @@
       <updated>1694274396724</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merging changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merging changes" />
   </component>
 </project>
