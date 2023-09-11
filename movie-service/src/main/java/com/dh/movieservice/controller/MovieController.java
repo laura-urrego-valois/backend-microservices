@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @author vaninagodoy
@@ -15,6 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/movies")
 public class MovieController {
+
+    private static java.util.logging.Logger log = Logger.getLogger(MovieController.class.getName());
 
     private final MovieService movieService;
     private final MovieSender sender;
@@ -26,6 +29,7 @@ public class MovieController {
 
     @GetMapping("/{genre}")
     ResponseEntity<List<Movie>> getMovieByGenre(@PathVariable String genre) {
+        log.info("Solicitando pelicula por género: " + genre);
         return ResponseEntity.ok().body(movieService.findByGenre(genre));
     }
 
@@ -36,6 +40,7 @@ public class MovieController {
 
     @PostMapping("/save")
     ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
+        log.info("Guardando pelicula: " + movie);
         sender.sendMsg(movie);
         return ResponseEntity.ok().body(movieService.save(movie));
     }

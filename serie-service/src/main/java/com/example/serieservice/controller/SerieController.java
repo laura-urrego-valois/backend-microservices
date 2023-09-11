@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @author vaninagodoy
@@ -15,6 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/series")
 public class SerieController {
+
+    private static java.util.logging.Logger log = Logger.getLogger(SerieController.class.getName());
 
     private final SerieService serieService;
     private final SerieSender sender;
@@ -26,11 +29,13 @@ public class SerieController {
 
     @GetMapping
     public List<Serie> getAll() {
+        log.info("Solicitando todas las series");
         return serieService.getAll();
     }
 
     @GetMapping("/{genre}")
     public List<Serie> getSerieByGenre(@PathVariable String genre) {
+        log.info("Solicitando series por género: " + genre);
         return serieService.getSeriesBygGenre(genre);
     }
 
