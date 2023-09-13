@@ -5,19 +5,14 @@ Se debe seleccionar uno de los servicios (preferentemente el que consideres que 
 
 Para lo anterior deberás:
 
---> Definir esquema de resiliencia, implementar retry, un método fallback y configurar las reglas del circuito.
-
 --> Describir la solución de dicha implementación, planteando un supuesto escenario que requiera implementar este patrón, justificándolo en un comentario o en el Readme del repositorio perteneciente al proyecto.
 
-## El servicio seleccionado para que sea tolerante a fallos es el CatalogService.
+## El servicio seleccionado para que sea tolerante a fallos es catalog-service.
 
-El CatalogService es un servicio muy importante, ya que es el punto de entrada para que los usuarios accedan a información sobre películas y series. Por eso, es importante que sea tolerante
-a fallos.
-Si el CatalogService falla, los usuarios no podrán acceder a la información que necesitan. Esto podría ocasionar inconformidades e insatisfacción a los usuarios, y la imagen de la
-aplicación se vería gravemente afectada así que es necesario pensar en una forma de evitar las interrupciones innecesarias.
+El catalog-service es un servicio muy importante, ya que es el punto de entrada para que los usuarios accedan a información sobre películas y series. Por eso, es importante que sea tolerante a fallos.
 
-Es importante tener en cuenta que el CatalogService depende de otros servicios para obtener información (películas y series). Si uno de estos servicios falla, el CatalogService también
-podría verse comprometido. Es también por esta razón, que se hace necesario que el CatalogService sea capaz de manejar situaciones en las que sus servicios dependientes no estén disponibles.
+Supongamos que los servicios de películas y series pueden experimentar interrupciones temporales o sobrecarga debido a la alta demanda. Si no se utiliza un Circuit Breaker, la aplicación intentaría realizar llamadas a estos servicios incluso cuando estén experimentando problemas, lo que podría aumentar la carga en los servicios y hacer que la aplicación sea menos resistente a fallos.
 
-Para concluir, la elección de CatalogService como el servicio tolerante a fallos contribuirá a mantener un funcionamiento fluido de la aplicación. Esta medida beneficia tanto a los usuarios
-como a la integridad general del sistema.
+En el escenario dado, la aplicación utiliza el Circuit Breaker para protegerla de los servicios de películas o series que no responden adecuadamente. Si estos servicios no responden, el Circuit Breaker abrirá el circuito y la aplicación utilizará los métodos de fallback findAllEmpty evitando así que la aplicación colapse o se degrade debido a problemas en los servicios.
+
+Para concluir, la elección de catalog-service como el servicio tolerante a fallos contribuirá a mantener un funcionamiento fluido de la aplicación. Esta medida beneficia tanto a los usuarios como a la integridad general del sistema.
