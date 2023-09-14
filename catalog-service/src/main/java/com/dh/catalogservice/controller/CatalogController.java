@@ -2,9 +2,11 @@ package com.dh.catalogservice.controller;
 
 import com.dh.catalogservice.client.IMovieClient;
 import com.dh.catalogservice.client.ISerieClient;
+import com.dh.catalogservice.model.Genre;
 import com.dh.catalogservice.model.Movie;
 import com.dh.catalogservice.model.Serie;
 import com.dh.catalogservice.queue.Listener;
+import com.dh.catalogservice.service.CatalogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -28,6 +30,9 @@ public class CatalogController {
     @Autowired
     private ISerieClient serieClient;
 
+    @Autowired
+    private CatalogService catalogService;
+
     private final Listener listener;
 
     public CatalogController(Listener listener) {
@@ -44,8 +49,14 @@ public class CatalogController {
     @PostMapping("/catalog/movie/save")
     public ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
         log.info("Guardando película: " + movie);
-        listener.receiveMovie(movie);
         return movieClient.saveMovie(movie);
+    }
+
+    @PostMapping("/record/movie")
+    public ResponseEntity<Movie> guardarMovie(@RequestBody Movie movie) {
+        log.info("Guardando película: " + movie);
+        listener.receiveMovie(movie);
+        return ResponseEntity.noContent().build();
     }
 
     /*---------------------------------------------------------------------------------*/
@@ -59,35 +70,26 @@ public class CatalogController {
     @PostMapping("/catalog/serie/save")
     public ResponseEntity<Serie> saveSerie(@RequestBody Serie serie) {
         log.info("Guardando serie: " + serie);
-        listener.receiveSerie(serie);
         return serieClient.saveSerie(serie);
+    }
+
+    @PostMapping("/record/serie")
+    public ResponseEntity<Serie> guardarSerie(@RequestBody Serie serie) {
+        log.info("Guardando serie: " + serie);
+        listener.receiveSerie(serie);
+        return ResponseEntity.noContent().build();
     }
 
     /*---------------------------------------------------------------------------------*/
 
     @GetMapping("/catalog/{genre}")
-    public ResponseEntity<Map<String, List<?>>> getMoviesAndSeriesByGenre(@PathVariable String genre) {
-        log.info("Solicitando películas y series por género: " + genre);
+    public ResponseEntity<Genre> getMoviesAndSeriesByGenre(@PathVariable String genre) {
+        log.info("Solicitando desde el catálogo películas y series por género: " + genre);
 
-        ResponseEntity<List<Movie>> moviesResponse = movieClient.getMoviesByGenre(genre);
-        ResponseEntity<List<Serie>> seriesResponse = serieClient.getSerieByGenre(genre);
+        Genre genreInfo = catalogService.getMoviesAndSeries(genre);
 
-        Map<String, List<?>> catalog = new HashMap<>();
+        return new ResponseEntity<>(genreInfo, HttpStatus.OK);
 
-        if (moviesResponse.getStatusCode().is2xxSuccessful()) {
-            catalog.put("movies", moviesResponse.getBody());
-        } else {
-            catalog.put("movies", Collections.emptyList());
-        }
-
-        if (seriesResponse.getStatusCode().is2xxSuccessful()) {
-            catalog.put("series", seriesResponse.getBody());
-        } else {
-            catalog.put("series", Collections.emptyList());
-        }
-
-        return ResponseEntity.ok(catalog);
     }
-
 
 }

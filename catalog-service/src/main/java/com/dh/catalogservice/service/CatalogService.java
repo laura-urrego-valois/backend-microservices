@@ -1,5 +1,6 @@
 package com.dh.catalogservice.service;
 
+import com.dh.catalogservice.model.Genre;
 import com.dh.catalogservice.model.Movie;
 import com.dh.catalogservice.model.Serie;
 import com.dh.catalogservice.repositories.MoviesRepository;
@@ -21,5 +22,11 @@ public class CatalogService {
         return seriesRepository.save(serie);
     }
 
+    public Genre getMoviesAndSeries (String genre){
+        Genre genre1 = new Genre();
+        genre1.setMovies(movieRepository.findByGenre(genre));
+        genre1.setSeries(seriesRepository.findByGenre(genre));
+        return genre1;
+    }
 
 }
