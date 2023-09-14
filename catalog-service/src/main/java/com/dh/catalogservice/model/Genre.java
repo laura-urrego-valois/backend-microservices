@@ -1,7 +1,6 @@
 package com.dh.catalogservice.model;
 
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 

@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="02efebd3-b21e-4c52-9f6d-48e3fccdef54" name="Changes" comment="merge changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/MoviesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/MoviesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/SeriesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/SeriesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/CatalogService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +32,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/client/ISerieClient.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/controller/CatalogController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/model/Serie.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/queue/Listener.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/MoviesRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/repositories/SeriesRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/CatalogService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/IMovieService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/ISerieService.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/catalog-service/src/main/java/com/dh/catalogservice/service/MovieServiceImpl.java" root0="SKIP_INSPECTION" />
@@ -55,7 +65,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.GatewayApplication">
+  <component name="RunManager" selected="Application.CatalogServiceApplication">
     <configuration name="CatalogServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.dh.catalogservice.CatalogServiceApplication" />
       <module name="catalog-service" />
@@ -69,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.eurekaserver.EurekaServerApplication" />
-      <module name="eureka-server" />
+    <configuration name="ConfigServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dh.configserver.ConfigServerApplication" />
+      <module name="config-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.eurekaserver.*" />
+          <option name="PATTERN" value="com.dh.configserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.CatalogServiceApplication" />
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.SerieServiceApplication" />
         <item itemvalue="Application.MovieServiceApplication" />
-        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.ConfigServerApplication" />
       </list>
     </recent_temporary>
   </component>
