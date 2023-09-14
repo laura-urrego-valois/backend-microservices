@@ -33,6 +33,11 @@ public class SerieController {
         return serieService.getAll();
     }
 
+    @GetMapping("/findAll")
+    public List<Serie> findAll(@RequestParam(defaultValue = "true") Boolean throwError) {
+        return serieService.findAll(throwError);
+    }
+
     @GetMapping("/{genre}")
     public List<Serie> getSerieByGenre(@PathVariable String genre) {
         log.info("Solicitando series por género: " + genre);

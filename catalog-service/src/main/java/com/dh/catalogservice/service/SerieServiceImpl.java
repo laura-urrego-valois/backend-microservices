@@ -1,8 +1,8 @@
 package com.dh.catalogservice.service;
 
-import com.dh.catalogservice.client.IMovieClient;
 import com.dh.catalogservice.client.ISerieClient;
 import com.dh.catalogservice.model.Movie;
+import com.dh.catalogservice.model.Serie;
 import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
@@ -15,26 +15,24 @@ import java.util.List;
 
 @Slf4j
 @Service
-public class MovieServiceImpl implements IMovieService {
+public class SerieServiceImpl implements ISerieService {
 
-    private IMovieClient movieClient;
+    private ISerieClient serieClient;
 
     @Autowired
-    public MovieServiceImpl(IMovieClient movieClient) {
-        this.movieClient = movieClient;
+    public SerieServiceImpl(ISerieClient serieClient) {
+        this.serieClient = serieClient;
     }
-
-
-    @CircuitBreaker(name = "movies", fallbackMethod = "findAllEmpty")
-    @Retry(name = "movies")
+    @CircuitBreaker(name = "series", fallbackMethod = "findAllEmpty")
+    @Retry(name = "series")
     @Override
-    public List<Movie> findAll() {
-        log.info("Calling movie service...");
+    public List<Serie> findAll() {
+        log.info("Calling serie service...");
 
-        return movieClient.findAll(true);
+        return serieClient.findAll(true);
     }
 
-    private List<Movie> findAllEmpty(CallNotPermittedException exception) {
+    private List<Serie> findAllEmpty(CallNotPermittedException exception) {
 
         return new ArrayList<>();
     }

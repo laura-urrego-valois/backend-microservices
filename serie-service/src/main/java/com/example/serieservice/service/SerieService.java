@@ -24,6 +24,13 @@ public class SerieService {
         return repository.findAll();
     }
 
+    public List<Serie> findAll(Boolean throwError) {
+        if (throwError)
+            throw new RuntimeException();
+
+        return repository.findAll();
+    }
+
     public List<Serie> getSeriesBygGenre(String genre) {
         return repository.findAllByGenre(genre);
     }
